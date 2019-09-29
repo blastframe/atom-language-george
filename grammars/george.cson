@@ -88,11 +88,7 @@ patterns: [
     },
     {
         name = 'storage.type.george';
-        match = '(?i)\\bFUNCTION|\\bINT|\\bVAR|\\bLOCAL';
-    },
-    {
-        name = 'variable.parameter';
-        match = '(?i)\\bPARAM';
+        match = '(?i)\\bPARAM|\\bFUNCTION|\\bINT|\\bVAR|\\bLOCAL';
     },
     {
         name = 'string.quoted.double.george';
