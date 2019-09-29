@@ -70,12 +70,12 @@ patterns: [
         match = '(?i)\\b\\w*if\\b|\\b\\w*else\\b|\\b\\w*while\\b|\\b\\w*do\\b|\\b\\w*until\\b|\\b\\w*for\\b|\\b\\w*return\\b|\\b\\w*end';
     },
     {
-        match: '(?i)\\bNone'
+        match: '(?i)\\b\\w*None\\b'
         name: 'constant.language.george'
     },
     {
         name = 'support.function.george';
-        match = '(?i)\\bCMP\\b|\\b\\w*CONCAT\\b|\\b\\w*CHAR\\b|\\b\\w*LEN\\b|\\b\\w*LOCAL\\b|\\b\\w*CUT\\b|\\b\\w*PRINT\\b|\\b\\w*PARSE'
+        match = '(?i)\\b\\w*ABS\\b|\\b\\w*ACOS\\b|\\b\\w*ASIN\\b|\\b\\w*ATAN\\b|\\b\\w*BREAK\\b|\\b\\w*CHAR\\b|\\b\\w*CMP\\b|\\b\\w*COS\\b|\\b\\w*CUT\\b|\\b\\w*DATE\\b|\\b\\w*EXIT\\b|\\b\\w*LEN\\b|\\b\\w*MAX\\b|\\b\\w*MIN\\b|\\b\\w*PARSE\\b|\\b\\w*PAUSE\\b|\\b\\w*PRINT\\b|\\b\\w*RND\\b|\\b\\w*SIN\\b|\\b\\w*SQR\\b|\\b\\w*TAN\\b|\\b\\w*TIME\\b|\\b\\w*TRUNC\\b|\\b\\w*VERSION'
     },
     {
         name = 'string.quoted.single.george';
