@@ -84,7 +84,7 @@ patterns: [
     },
     {
         name = 'storage.type.george';
-        match = '(?i)\\b\\w*PARAM\\b|\\b\\w*FUNCTION\\b|\\b\\w*INT\\b|\\b\\w*VAR\\b|\\b\\w*LOCAL\\b';
+        match = '(?i)\\b\\w*PARAM\\b|\\b\\w*FUNCTION\\b|\\b\\w*INT\\b|\\b\\w*VAR\\b|\\b\\w*LOCAL\\b|\\b\\w*RESULT\\b|\\b\\w*text\\b|\\b\\w*frame\\b|\\b\\w*file\\b|\\b\\w*path\\b';
     },
     {
         name = 'string.quoted.double.george';
