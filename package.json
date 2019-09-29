@@ -1,8 +1,8 @@
 {
   "name": "language-george",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "engines": {
-    "atom": "*"
+    "atom": ">=1.0.0 <2.0.0"
   },
   "description": "TVPaint's George language support in Atom",
   "repository": "https://github.com/blastframe/atom-language-george.git",
@@ -14,6 +14,5 @@
     "george"
   ],
   "license": "MIT",
-  "dependencies": {},
-  "engines": {"atom": ">=1.0.0 <2.0.0"}
+  "dependencies": {}
 }
