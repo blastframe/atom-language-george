@@ -1,0 +1,118 @@
+scopeName: 'source.george'
+name: 'George'
+fileTypes: [ 'grg' ]
+limitLineLength: false
+
+patterns: [
+    {
+        comment: 'Comment highlighting.'
+        name: 'comment.line.george'
+        match: '\/\/.*$'
+    },
+    {
+        name: 'keyword.control.import.george'
+        match: '#INCLUDE.*$'
+    },
+    {
+        name: 'constant.character.separator.george'
+        match: ','
+    },
+    {
+        match: '\\b(?i:(0x\\h*)L)'
+        name: 'constant.numeric.integer.long.hexadecimal.george'
+    },
+    {
+        match: '\\b(?i:(0x\\h*))'
+        name: 'constant.numeric.integer.hexadecimal.george'
+    },
+    {
+        match: '\\b(?i:(0o?[0-7]+)L)'
+        name: 'constant.numeric.integer.long.octal.george'
+    },
+    {
+        match: '\\b(?i:(0o?[0-7]+))'
+        name: 'constant.numeric.integer.octal.george'
+    },
+    {
+        match: '\\b(?i:(0b[01]+)L)',
+        name: 'constant.numeric.integer.long.binary.george'
+    },
+    {
+        match: '\\b(?i:(0b[01]+))',
+        name: 'constant.numeric.integer.binary.george'
+    },
+    {
+        match: '\\b(?i:(((\\d+(\\.(?=[^a-zA-Z_])\\d*)?|(?<=[^0-9a-zA-Z_])\\.\\d+)(e[\\-\\+]?\\d+)?))J)'
+        name: 'constant.numeric.complex.george'
+    },
+    {
+        match: '\\b(?i:(\\d+\\.\\d*(e[\\-\\+]?\\d+)?))(?=[^a-zA-Z_])'
+        name: 'constant.numeric.float.george'
+    },
+    {
+        match: '(?<=[^0-9a-zA-Z_])(?i:(\\.\\d+(e[\\-\\+]?\\d+)?))'
+        name: 'constant.numeric.float.george'
+    },
+    {
+        match: '\\b(?i:(\\d+e[\\-\\+]?\\d+))'
+        name: 'constant.numeric.float.george'
+    },
+    {
+        match: '\\b(?i:([1-9]+[0-9]*|0)L)'
+        name: 'constant.numeric.integer.long.decimal.george'
+    },
+    {
+        match: '\\b([1-9]+[0-9]*|0)'
+        name: 'constant.numeric.integer.decimal.george'
+    },
+    {
+        name = 'keyword.control.george';
+        match = '(?i)\\bif|\\belse|\\bwhile|\\bdo|\\buntil|\\bfor|\\breturn|\\bend';
+    },
+    {
+        match: '(?i)\\bNone'
+        name: 'constant.language.python'
+    }
+    {
+        name = 'support.function.george';
+        match = '(?i)\\bCMP|\\bCONCAT|\\bCHAR|\\bLEN|\\bLOCAL|\\bCUT|\\bPRINT|\\bPARSE'
+    },
+    {
+        name = '';
+        match = '#INCLUDE';
+    },
+    {
+        name = 'string.quoted.single.george';
+        begin = '\'';
+        end = '\'';
+    },
+    {
+        name = 'storage.type.george';
+        match = '(?i)\\bFUNCTION|\\bINT|\\bVAR|\\bLOCAL';
+    },
+    {
+        name = 'variable.parameter';
+        match = '(?i)\\bPARAM';
+    },
+    {
+        name = 'string.quoted.double.george';
+        begin = '"';
+        end = '"';
+    },
+    {
+        name: 'keyword.operator.arithmetic.george'
+        match: '\\+|\\-|\\*|\\*\\*|/|//|%|<<|>>|&|\\||\\^|~'
+    },
+    {
+        name: 'keyword.operator.assignment.george'
+        match: '\\='
+    },
+    {
+        name: 'keyword.operator.comparison.george'    
+        match: '<\\=|>\\=|\\=\\=|<|>|\\!\\='
+    }
+    {
+        name = 'support.function.george';
+        match = '(?i)\\btv_AirBrush|\\btv_AlphaLoadMode|\\btv_AlphaSaveMode|\\btv_AreaDraw|\\btv_AreaGradientVector|\\btv_AreaInit|\\btv_AreaMove|\\btv_Background|\\btv_Blend|\\btv_BookmarkClear|\\btv_BookmarkNext|\\btv_BookmarkPrev|\\btv_BookmarksEnum|\\btv_BookmarkSet|\\btv_BookmarkToggle|\\btv_BrushCut|\\btv_BrushFromClipBoard|\\btv_BrushInfo|\\btv_BrushPoly|\\btv_BrushRestore|\\btv_BrushToClipBoard|\\btv_Bump|\\btv_CameraEnumPoints|\\btv_CameraInfo|\\btv_CameraInsertPoint|\\btv_CameraRemovePoint|\\btv_CameraSetPoint|\\btv_Circle|\\btv_CircleFill|\\btv_Clear|\\btv_ClipAction|\\btv_ClipClose|\\btv_ClipColor|\\btv_ClipCurrentID|\\btv_ClipCurrentId|\\btv_ClipDialog|\\btv_ClipDuplicate|\\btv_ClipEnumId|\\btv_ClipHidden|\\btv_ClipInfo|\\btv_ClipMove|\\btv_ClipName|\\btv_ClipNew|\\btv_ClipNote|\\btv_ClipSaveStructure|\\btv_ClipSelect|\\btv_ClipSelection|\\btv_Cmd|\\btv_ColorFactory|\\btv_ConnexionSettings|\\btv_Convolve33|\\btv_Convolve55|\\btv_CrazyBlur|\\btv_CustomMode|\\btv_cutbrush|\\btv_DensityLineX|\\btv_DensityLineY|\\btv_DensityX|\\btv_DensityY|\\btv_Display|\\btv_dot|\\btv_Dot|\\btv_drawsmoothing|\\btv_Ellipse|\\btv_EllipseFill|\\btv_ExposureAdd|\\btv_ExposureBreak|\\btv_ExposureFauxFixe|\\btv_ExposureInfo|\\btv_Exposureinfo|\\btv_ExposureNext|\\btv_ExposurePrev|\\btv_FastLine|\\btv_FieldCopy|\\btv_FieldDouble|\\btv_FileInfo|\\btv_Fill|\\btv_Filter|\\btv_FirstImage|\\btv_FixMotion|\\btv_FlipImageX|\\btv_FlipImageY|\\btv_FlipsAdd|\\btv_FlipsEnum|\\btv_FlipsModify|\\btv_FlipsRemove|\\btv_FrameRate|\\btv_Gauge|\\btv_GBlur|\\btv_GetActiveShape|\\btv_GetActiveTool|\\btv_GetAPen|\\btv_GetBPen|\\btv_GetDrawMode|\\btv_GetField|\\btv_GetHeight|\\btv_GetLanguage|\\btv_getmodifiers|\\btv_GetMouse|\\btv_GetPalette|\\btv_getpath|\\btv_GetPath|\\btv_GetPixel|\\btv_GetPixelDisplay|\\btv_GetPixelLayer|\\btv_GetProjectName|\\btv_GetUser|\\btv_GetWidth|\\btv_GhostLine|\\btv_Grab|\\btv_guidelineAdd|\\btv_guidelineassist|\\btv_guidelinecollapse|\\btv_guidelinecolor|\\btv_guidelineenum|\\btv_guidelinemarge|\\btv_guidelinemodify|\\btv_guidelinename|\\btv_guidelineremove|\\btv_guidelinesnap|\\btv_guidelinevisible|\\btv_HealingSource|\\btv_host2Back|\\btv_host2Front|\\btv_ImageFromClipBoard|\\btv_ImagePop|\\btv_ImagePush|\\btv_ImageToClipBoard|\\btv_Infobar|\\btv_InstanceGetName|\\btv_InstanceSetName|\\btv_LastImage|\\btv_LayerAnim|\\btv_LayerAutoBreakInstance|\\btv_LayerAutoCreateInstance|\\btv_LayerBlendingMode|\\btv_LayerColor|\\btv_LayerCompareImage|\\btv_LayerCopy|\\btv_LayerCreate|\\btv_LayerCurrentID|\\btv_LayerCut|\\btv_LayerDensity|\\btv_LayerDisplay|\\btv_LayerDuplicate|\\btv_LayerFetch|\\btv_LayerGetID|\\btv_LayerGetImage|\\btv_LayerGetPos|\\btv_LayerHold|\\btv_LayerImage|\\btv_LayerInfo|\\btv_LayerInsertImage|\\btv_LayerInvert|\\btv_LayerKill|\\btv_layerloaddependencies|\\btv_LayerLock|\\btv_LayerLockPosition|\\btv_LayerMarkGet|\\btv_LayerMarkSet|\\btv_LayerMerge|\\btv_LayerMergeAll|\\btv_LayerMove|\\btv_LayerPaste|\\btv_LayerPostBehavior|\\btv_LayerPreBehavior|\\btv_LayerRecomputeExposure|\\btv_LayerRename|\\btv_LayerSelect|\\btv_LayerSelectInfo|\\btv_LayerSet|\\btv_LayerShift|\\btv_LayerStencil|\\btv_LayerStretch|\\btv_LighttableMode|\\btv_Line|\\btv_ListRequest|\\btv_LoadBrush|\\btv_LoadBrushAnim|\\btv_LoadImage|\\btv_LoadPalette|\\btv_LoadProject|\\btv_LoadSequence|\\btv_LoadSpare|\\btv_LockCacheFlush|\\btv_LockDisplay|\\btv_LockMouse|\\btv_MagicNumber|\\btv_MarkIn|\\btv_MarkOut|\\btv_MenuHide|\\btv_MenuShow|\\btv_Mosaic|\\btv_Noise|\\btv_Nop|\\btv_notelock|\\btv_NoteRect|\\btv_NoteText|\\btv_OilBrush|\\btv_Panning|\\btv_Paper|\\btv_PaperEnum|\\btv_PaperInfo|\\btv_pegholesapply|\\btv_pegholesset|\\btv_PenBrush|\\btv_Pencil|\\btv_PersWrap|\\btv_PicColor|\\btv_PixelMatrix|\\btv_Preserve|\\btv_ProjectClose|\\btv_ProjectCurrentFrame|\\btv_ProjectCurrentID|\\btv_ProjectDuplicate|\\btv_ProjectEnumID|\\btv_ProjectInfo|\\btv_ProjectNew|\\btv_ProjectRenderCamera|\\btv_ProjectSaveSequence|\\btv_ProjectSelect|\\btv_Propelling|\\btv_Quit|\\btv_RangeClear|\\btv_RangeGrab|\\btv_RangeNoise|\\btv_RangeSet|\\btv_Ratio|\\btv_ReadClipString|\\btv_ReadProjectString|\\btv_ReadTextFile|\\btv_readuserstring|\\btv_ReadUserString|\\btv_Reapply|\\btv_Recorder|\\btv_Rect|\\btv_RectFill|\\btv_Redo|\\btv_ReqAngle|\\btv_ReqFile|\\btv_ReqFloat|\\btv_ReqNum|\\btv_ReqString|\\btv_Request|\\btv_ResetDisplay|\\btv_ResizePage|\\btv_runscript|\\btv_SaveBrush|\\btv_SaveBrushAnim|\\btv_SaveClip|\\btv_SaveDisplay|\\btv_SaveImage|\\btv_SaveMode|\\btv_SavePalette|\\btv_SaveProject|\\btv_SaveSequence|\\btv_SceneClose|\\btv_SceneCurrentId|\\btv_SceneDuplicate|\\btv_SceneeNumId|\\btv_SceneMove|\\btv_SceneNew|\\btv_SelectShapeTool|\\btv_SerialNumber|\\btv_setActiveShape|\\btv_SetApen|\\btv_SetAPen|\\btv_SetBPen|\\btv_SetColor|\\btv_SetDrawMode|\\btv_SetPalette|\\btv_Shadow|\\btv_Smooth|\\btv_SmoothDensity|\\btv_SmoothEdge|\\btv_SoundClipAdjust|\\btv_SoundClipInfo|\\btv_SoundClipNew|\\btv_SoundClipReload|\\btv_SoundClipRemove|\\btv_SoundProjectAdjust|\\btv_SoundProjectInfo|\\btv_SoundProjectNew|\\btv_SoundProjectReload|\\btv_SoundProjectRemove|\\btv_SpareAddDensity|\\btv_SpareCopy|\\btv_SpareKill|\\btv_SpareSubDensity|\\btv_SpareSwap|\\btv_SpareToBack|\\btv_SpareToFront|\\btv_SpecialBrush|\\btv_Speed|\\btv_speedfillbrush|\\btv_speedfilleraser|\\btv_StackApply|\\btv_StackClear|\\btv_StackClose|\\btv_StackExecute|\\btv_StackExecuteBin|\\btv_StackLoad|\\btv_StackLoadbin|\\btv_StackOpen|\\btv_StackSave|\\btv_StackSavebin|\\btv_StartFrame|\\btv_StrokePoint|\\btv_StrokeSize|\\btv_stylusOnly|\\btv_TCMode|\\btv_TextBrush|\\btv_TextTool|\\btv_TextTool2|\\btv_Tornado|\\btv_Undo|\\btv_UndoCloseStack|\\btv_UndoOpenStack|\\btv_UnLockCacheFlush|\\btv_UnLockDisplay|\\btv_UnlockMouse|\\btv_UpdateUndo|\\btv_Version|\\btv_vfGetFont|\\btv_vfStringSize|\\btv_WaitButton|\\btv_warn|\\btv_Warn|\\btv_WarpBrush|\\btv_Wave|\\btv_WetBrush|\\btv_WriteClipString|\\btv_WritePixel|\\btv_WriteProjectString|\\btv_WriteTextFile|\\btv_WriteUserString|\\btv_ZDot|\\btv_ZLine|\\btv_ZSpline';
+    }
+]
