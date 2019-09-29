@@ -6,11 +6,11 @@
 
 [TVPaint George Wiki](https://wiki.tvpaint.com/index.php?title=George). Adds syntax highlighting to '.grg' files.
 
-![language-grg](https://i.imgur.com/FIDzORz.png)
+![language-george](https://i.imgur.com/FIDzORz.png)
 
 ## Install
 
-Settings/Preferences > Install > Search for `language-grg`
+Settings/Preferences > Install > Search for `language-george`
 
 or
 
