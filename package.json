@@ -5,6 +5,7 @@
     "atom": "*"
   },
   "description": "TVPaint's George language support in Atom",
+  "repository": "https://github.com/blastframe/atom-language-george.git",
   "keywords": [
     "syntax",
     "highlighting",
