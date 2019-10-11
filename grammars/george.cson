@@ -84,7 +84,7 @@ patterns: [
     },
     {
         name = 'storage.type.george';
-        match = '(?i)\\bPARAM(?=[.,(]|$|\\s)|\\bFUNCTION(?=[.,(]|$|\\s)|\\bINT(?=[.,(]|$|\\s)|\\bVAR(?=[.,(]|$|\\s)|\\bLOCAL(?=[.,(]|$|\\s)|\\bRESULT(?=[.,(]|$|\\s)|\\btext(?=[.,(]|$|\\s)|\\bframe(?=[.,(]|$|\\s)|\\bfile(?=[.,(]|$|\\s)|\\bpath\\b';
+        match = '(?i)\\bPARAM(?=[.,(]|$|\\s)|\\bFUNCTION(?=[.,(]|$|\\s)|\\bINT(?=[.,(]|$|\\s)|\\bVAR(?=[.,(]|$|\\s)|\\bLOCAL(?=[.,(]|$|\\s)|\\btext(?=[.,(]|$|\\s)|\\bframe(?=[.,(]|$|\\s)|\\bfile(?=[.,(]|$|\\s)|\\bpath\\b';
     },
     {
         name = 'string.quoted.double.george';
